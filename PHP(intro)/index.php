@@ -29,9 +29,9 @@
 
     //step4
     $abs5 = abs(-5);
-    echo "<p>$abs5</p>";
+    echo "<p>"La valeur absolue de -5 vaut  $abs5"</p>";
     $abs10 = abs(10);
-    echo "<p>$abs10</p>";
+    echo "<p>"La valeur absolue de 10 vaut $abs10"</p>";
     
     ?>
 </body>
