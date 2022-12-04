@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Rijckaert</title>
+    <title>accueil</title>
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     </div>
     <div class="Centre">
         <h1>Animalerie Tom&Co</h1>
-        <h2>Je veux des belles fonctions php (séparer traitement et affichage)</h2>
+        <h2 class="espace">Je veux des belles fonctions php (séparer traitement et affichage)</h2>
 
         <!--Traitement-->
         <?php 
@@ -58,13 +58,13 @@
         ?>
 
         <!--Affichage-->
-        <p>Voici une suite bien spéciale <?= fonctionSpeciale(5,10) ?> </p>
+        <p class="espace">Voici une suite bien spéciale <?= fonctionSpeciale(5,10) ?> </p>
 
-        <p> Le PGCD entre 21 et 15 vaut <?= algorithmeEuclide2(21, 15) ?></p>
+        <p class="espace"> Le PGCD entre 21 et 15 vaut <?= algorithmeEuclide2(21, 15) ?></p>
 
-        <h2>Montrer moi commment afficher proprement du code</h2>
+        <h2 class="espace">Montrer moi commment afficher proprement du code</h2>
 
-        <p>Dans la varialble $tableau voici tout les nombre paire</p>
+        <p class="espace">Dans la varialble $tableau voici tout les nombre paire</p>
         <ul>
            <?php for($j = 0; $j < sizeof($tableau); $j++): ?>
                 <?php if($tableau[$j] % 2 == 0): ?>
@@ -73,15 +73,16 @@
             <?php endfor ?>   
         </ul>
 
-        <p>Dans la variable $phrase "Bonjour à tous pour ces révisions", la dernière lettre de chaque mot est</p>
+        <p class="espace phrase">Dans la variable $phrase "Bonjour à tous pour ces révisions", la dernière lettre de chaque mot est</p>
+        
+        <!--
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <?php $longueur = strlen($phrase); ?>
+            <?php for($i = 0; $i < $longueur; $i++): ?>       
+                <li><?php substr($phrase, -1, $longueur); ?></li>
+            <?php endfor ?>
         </ul>
+            -->
     </div>
 </body>
 </html>

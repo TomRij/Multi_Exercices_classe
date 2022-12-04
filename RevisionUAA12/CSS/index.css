@@ -17,35 +17,85 @@ body{
     font-size: 1.2em;
     background-color: burlywood;
 }
+a{
+    text-decoration: none;
+    color: brown;
+    padding: 15px;
+    
+}
+a:hover {
+    background-color: antiquewhite;
+    box-shadow: -0.3em -0.1em .4em black, 0.3em 0.1em 0.5em lightgray;
+    }
 .Centre{
     width: 80%;
     margin: 0 auto;
 }
 h1{
-    color: red;
+    color: brown;
     font-size: 3em;
     text-decoration: underline;
     padding-top: 30px;
+    margin-bottom: 40px;
 }
 label{
     padding: .4em;
     font-size: 1.4em;
-    margin-right: -150px;
 }
 form{
     padding-top: 40px;
 }
 .form-principal {
     
-    display: flex;
     flex-direction: column;
 }
 input{
     width: 20%;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 10px;
 }
 legend{
     font-size: 2em;
+    color: brown;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 10px 25px;
+    margin-left: 10px;
 }   
+.espace{
+    margin-bottom: 20px;
+}
+ul{
+    padding-left: 35px;
+}
+.phrase{
+    margin-top: 20px;
+}
+.em-form{
+    font-size: 1.5em;
+}
+.checkbox{
+    margin-left: -116px;
+    height: 1em;
+}
+.checkbox-font{
+    font-size: 1em;
+}
+.form-left-espace{
+    margin-left: 13px;
+}
+input[type=submit]{
+    height: 40px;
+    width: 80px;
+    background-color: greenyellow;
+    margin-left: 20px;
+    box-shadow: 0.3em 0.3em 0.4em black;
+    border-color: gray;
+    border-style: dotted;
+}
+textarea{
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: -4px;
+}
